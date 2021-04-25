@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <link rel="stylesheet" href="style.css"> <!--Ajouter le fichier css-->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teddie</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="blocPrincipal">
+                <img src="./logo.png" alt="logo">
+            </div>
+        </header>
+
+        <main>
+            <div id="produitTeddie"></div>
+        </main>
+
+        <footer>
+            <div class="blocFooter">
+                <img src="./logo.png" alt="logo">
+                <p>Copyright 2021</p>
+            </div>
+        </footer>
+
+
+        
+        <script src="js/model.js" ></script>
+        <script src="js/controller.js" ></script>
+        <script src="js/view/detailTeddieView.js" ></script>
+        <script defer> 
+            let controller = new Controller
+            controller.showTeddie()
+        </script>
+    </body>
+
+</html>

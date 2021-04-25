@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.blocPrincipal {
+    width: 100%;
+    height: 200px;
+}
+
+.blocPrincipal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*rend l'image plus net*/
+}
+
+#produitTeddie {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.teddie {
+    border: 1px solid darkgray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+.imgTeddie {
+    display: flex;
+    justify-content: center;
+}
+
+.imgTeddie img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.description {
+    text-align: center;
+    font-size: large;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+
+.lienTeddie, .commande {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 5px;
+}
+
+.blocPrincipale {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#boutton, #btnCommande {
+    border-radius: 20px;
+    height: 50px;
+    width: 50%;
+}
+
+#validerBtnCommande {
+    border-radius: 20px;
+    height: 50px;
+    width: 250px;
+}
+
+#panierPrix {
+    display: flex;
+    justify-content: center;
+}
+
+.totalPrice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 70px;
+    width: 200px;
+}
+
+form p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+fieldset {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+legend {
+    border: chocolate 1px solid;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+   font-size: large;
+   font-weight: bold;
+}
+
+.blocFooter {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    background-color: #f5ebeb;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    font-size: large;
+    font-weight: bold;
+}
+
+footer img {
+    height: 100%;
+    width: 68%;
+    object-fit: cover;
+}
+
+.blocCommande {
+    border: 2px solid black;
+    box-shadow: 5px 5px 20px darkgrey;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#introCommande {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#nCommande {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.recapCommande {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.totalPriceCommande {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media all and (min-width: 1024px) {  /*Grand ecran*/
+
+    .blocPrincipal {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .blocPrincipal img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /*rend l'image plus net*/
+    }
+
+    .teddie {
+        width: 30%;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 1024px) {  /*Petit ecran*/
+
+    .blocPrincipal {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .blocPrincipal img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /*rend l'image plus net*/
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    .price {
+        font-size: 1.5em;
+    }
+
+    .description {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        font-size: 1.5em;
+    }
+
+    #boutton {
+        margin-bottom: 30px;
+    }
+
+    #boutton, #btnCommande {
+        width: 80%;
+    }
+
+    footer img {
+        width: 80%;
+    }
+
+}

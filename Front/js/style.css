@@ -1,0 +1,26 @@
+.blocPrincipale {
+    width: 90%;
+    height: auto;
+    border: 1px black solid;
+}
+
+#name {
+    color: green;
+    border: 1px red solid;
+}
+
+#imgUrl {
+    width: 10%;
+    height: 10%;
+    border: 1px blue solid;
+}
+
+#price {
+    border: 1px solid purple;
+}
+
+#description {
+    border: 1px solid pink;
+    font-size: large;
+    font-style: italic;
+}
