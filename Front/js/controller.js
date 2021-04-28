@@ -28,6 +28,10 @@ class Controller{
     }
 
     async order(panier){
+        let products = [];
+        for(let i = 0; i < panier.length; i++){
+            products.push(panier[i]._id)    
+        }
         var order = { // créer un objet contact via le localstorage (formulaire)
             "contact": {
                 "firstName" : localStorage.getItem("firstname"),
@@ -36,9 +40,10 @@ class Controller{
                 "city" : localStorage.getItem("city"),
                 "email" : localStorage.getItem("email")
             },
-            "products" : panier
+            "products" : products
         }
         let command = await Model.post(order) // faire le post pour numéro de commande
+        console.log(command)
         return command
     }
 
