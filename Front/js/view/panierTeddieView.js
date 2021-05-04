@@ -19,13 +19,13 @@ class PanierTeddieView {
         `<fieldset><legend>Information personnel</legend>` +
         `<p>Entrer vos informations pour valider votre panier</p>` +
         `<label for="firstName" id="labelFirstName">Prénom</label>` +
-        `<input type="text" required id="firstName" name="firstName">` +
+        `<input type="text" required id="firstName" name="firstName" pattern="[a-z]{2,20}" title="Uniquement lettre minuscule">` +
         `<label for="lastName">Nom</label>` +
-        `<input type="text" required id="lastName" name="lastName">` +
+        `<input type="text" required id="lastName" name="lastName" pattern="[a-z]{2,20}" title="Uniquement lettre minuscule">` +
         `<label for="address">Adresse</label>` +
         `<input type="text" required id="address" name="address">` +
         `<label for="city">Ville</label>` +
-        `<input type="text" required id="city" name="city">` +
+        `<input type="text" required id="city" name="city" pattern="[a-z]{2,20}" title="Uniquement lettre minuscule">` +
         `<label for="email">E-mail</label>` +
         `<input type="email" required id="email" name="email">` +
         `<div class="totalPrice">Total : ${price/100}€</div>` +
