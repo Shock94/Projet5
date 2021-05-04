@@ -8,7 +8,6 @@ a {
 
 .blocPrincipal {
     width: 100%;
-    height: 200px;
 }
 
 .blocPrincipal img {
@@ -16,6 +15,33 @@ a {
     height: 100%;
     object-fit: cover; /*rend l'image plus net*/
 }
+
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 50px;
+}
+
+.accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    border: 2px black solid;
+    height: 100%;
+    width: 50%;
+}
+
+.panier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    border: 2px black solid;
+    height: 100%;
+    width: 50%;
+}
+
 
 #produitTeddie {
    display: flex;
@@ -222,13 +248,17 @@ footer img {
 
     .blocPrincipal {
         width: 100%;
-        height: 200px;
     }
     
     .blocPrincipal img {
         width: 100%;
         height: 100%;
         object-fit: cover; /*rend l'image plus net*/
+    }
+
+    .menu {
+        position: relative;
+        bottom: 4px;
     }
 
     .name {
